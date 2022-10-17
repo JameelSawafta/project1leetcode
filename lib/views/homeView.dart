@@ -34,6 +34,59 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+
+          child: SafeArea(
+            child: Container(
+              color: Color(0xff1F1F1F),
+              child: Column(
+                children: [
+                  ListTile(
+                    title: Text('Explore', style: TextStyle(color: Colors.white, fontSize: 17.sp),),
+                    leading: Icon(Icons.explore_outlined, color: Colors.white,),
+                    onTap: () {
+                      launch("https://leetcode.com/explore/");
+                    },
+                  ),
+                  ListTile(
+                    title: Text('Problems', style: TextStyle(color: Colors.white, fontSize: 17.sp),),
+                    leading: Icon(Icons.list_alt_outlined, color: Colors.white,),
+                    onTap: () {
+                      launch("https://leetcode.com/problemset/all/");
+                    },
+                  ),
+                  ListTile(
+                    title: Text('Discuss', style: TextStyle(color: Colors.white, fontSize: 17.sp),),
+                    leading: Icon(Icons.forum_outlined, color: Colors.white,),
+                    onTap: () {
+                      launch("https://leetcode.com/discuss/");
+                    },
+                  ),
+                  ListTile(
+                    title: Text('Contest', style: TextStyle(color: Colors.white, fontSize: 17.sp),),
+                    leading: Icon(Icons.sports_esports_outlined, color: Colors.white,),
+                    onTap: () {
+                      launch("https://leetcode.com/contest/");
+                    },
+                  ),
+                  ListTile(
+                    title: Text('Interview', style: TextStyle(color: Colors.white, fontSize: 17.sp),),
+                    leading: Icon(Icons.business_outlined, color: Colors.white,),
+                    onTap: () {
+                    },
+                  ),
+                  ListTile(
+                    title: Text('Store', style: TextStyle(color: Colors.white, fontSize: 17.sp),),
+                    leading: Icon(Icons.store, color: Colors.white,),
+                    onTap: () {
+                    },
+                  ),
+
+                ],
+              ),
+            ),
+          )
+      ),
       backgroundColor: Color(0xff1A1A1A),
         floatingActionButton: FloatingActionButton(
 
