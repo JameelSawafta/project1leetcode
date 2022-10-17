@@ -45,8 +45,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           elevation: 15,
         ),
         appBar: AppBar(
-          title: Text(data.title),
-          backgroundColor: Color(0xff282828)
+          title: Image.asset('images/logo.png', width: 18.75.w, height: 22.w,),
+          backgroundColor: Color(0xff282828),
+
+          centerTitle: true,
         ),
         body: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
